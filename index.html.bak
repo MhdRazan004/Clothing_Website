@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="LuxeAura Fashion - Premium Online Clothing Store. Shop latest trends in Men, Women, and Kids wear. Best prices and exclusive collections.">
+    <title>LuxeAura Fashion | Premium Clothing Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ========== TOP BAR ========== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:+94115128128">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>+94 11 512 8128</span>
+                </a>
+                <a href="mailto:customercare@mysoftlogic.lk">
+                    <i class="fas fa-envelope"></i>
+                    <span>customercare@mysoftlogic.lk</span>
+                </a>
+            </div>
+            <div class="user-actions">
+                <a href="#" id="registerLink"><i class="fas fa-user-plus"></i> Register</a>
+                <a href="#" id="signinLink"><i class="fas fa-sign-in-alt"></i> Sign in</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MAIN HEADER ========== -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo" id="logoLink">
+                <i class="fas fa-crown cart-icon-logo" style="color:var(--accent-color)"></i>
+                <div class="logo-text">luxe<span>aura</span><span class="domain">.com</span></div>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." id="searchInput">
+                <select class="category-select" id="categorySelect">
+                    <option>All Collections</option>
+                    <option>New Arrivals</option>
+                    <option>Men's Wear</option>
+                    <option>Women's Wear</option>
+                    <option>Kids & Baby</option>
+                    <option>Accessories</option>
+                    <option>Footwear</option>
+                    <option>Luxury Line</option>
+                    <option>Sales & Offers</option>
+                </select>
+                <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="header-actions">
+                <a href="#" class="header-action" id="wishlistLink">
+                    <i class="far fa-heart"></i>
+                    <span>Wishlist</span>
+                </a>
+                <a href="#" class="cart-action" id="cartLink">
+                    <div class="cart-icon-wrapper">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-badge">0</span>
+                    </div>
+                    <div class="cart-info">
+                        <span class="cart-label">Cart</span>
+                        <span class="cart-amount">LKR 0.00</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== STICKY NAVIGATION ========== -->
+    <nav class="nav-bar" id="navBar">
+        <div class="container">
+            <div class="all-categories-btn" id="allCategoriesBtn">
+                <i class="fas fa-bars"></i>
+                <span>ALL CATEGORIES</span>
+                <ul class="categories-dropdown" id="categoriesDropdown">
+                    <li><a href="#"><i class="fas fa-venus"></i> Women</a></li>
+                    <li><a href="#"><i class="fas fa-mars"></i> Men</a></li>
+                    <li><a href="#"><i class="fas fa-child"></i> Kids</a></li>
+                    <li><a href="#"><i class="fas fa-gem"></i> Accessories</a></li>
+                    <li><a href="#"><i class="fas fa-shoe-prints"></i> Footwear</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Luxury Line</a></li>
+                    <li><a href="#"><i class="fas fa-percent"></i> Clearance Sale</a></li>
+                </ul>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" id="shopByBrandLink">Brands</a></li>
+                <li><a href="#" class="deals-link" id="dealsLink">Trend Alert</a></li>
+                <li><a href="#" class="voucher-link" id="giftVoucherLink">Lookbook</a></li>
+                <li><a href="#" id="dutyFreeLink">Personal Styling</a></li>
+                <li><a href="#" class="other-payments-link" id="otherPaymentsLink">Member Rewards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SLIDER ========== -->
+    <section class="hero-section" id="heroSection">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1 - Uses generated image -->
+            <div class="hero-slide active">
+                <img src="images/hero_banner.png" alt="Softlogic Smartphones" class="slide-bg">
+                <div class="slide-content">
+                    <h2>New Launches Smartphones</h2>
+                    <h1>Softlogic MaxAiPlus</h1>
+                    <div class="slide-specs">
+                        <span class="spec-badge">6GB + 128GB</span>
+                        <span class="spec-badge">8GB + 128GB</span>
+                    </div>
+                    <div class="slide-price">Rs. 45,100</div>
+                    <button class="buy-now-btn" id="buyNowBtn1">BUY NOW</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="slide-bg-placeholder img-placeholder"
+                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <span class="placeholder-label">Banner Slide 2 (1320×480)</span>
+                </div>
+                <div class="slide-content">
+                    <h2>Exclusive Deals</h2>
+                    <h1>Samsung Galaxy A17 5G</h1>
+                    <div class="slide-specs">
+                        <span class="spec-badge">8GB + 128GB</span>
+                        <span class="spec-badge">5G Ready</span>
+                    </div>
+                    <div class="slide-price">Rs. 81,299</div>
+                    <button class="buy-now-btn" id="buyNowBtn2">BUY NOW</button>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="slide-bg-placeholder img-placeholder"
+                    style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <span class="placeholder-label">Banner Slide 3 (1320×480)</span>
+                </div>
+                <div class="slide-content">
+                    <h2>Home Appliances</h2>
+                    <h1>Up to 30% Off on All Appliances</h1>
+                    <div class="slide-price">Starting from Rs. 9,999</div>
+                    <button class="buy-now-btn" id="buyNowBtn3">SHOP NOW</button>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide">
+                <div class="slide-bg-placeholder img-placeholder"
+                    style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <span class="placeholder-label">Banner Slide 4 (1320×480)</span>
+                </div>
+                <div class="slide-content">
+                    <h2>Furniture Collection</h2>
+                    <h1>Modern Living Room Sets</h1>
+                    <div class="slide-price">Starting from Rs. 78,699</div>
+                    <button class="buy-now-btn" id="buyNowBtn4">EXPLORE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Icons -->
+        <div class="payment-icons-row">
+            <span class="payment-icon-badge">AMEX</span>
+            <span class="payment-icon-badge">VISA</span>
+            <span class="payment-icon-badge">Mastercard</span>
+            <span class="payment-icon-badge">KOKO</span>
+            <span class="payment-icon-badge">mintpay</span>
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-arrow prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+            <span class="slider-dot" data-slide="3"></span>
+        </div>
+    </section>
+
+    <!-- ========== PROMOTIONS BAR ========== -->
+    <section class="promotions-bar container animate-on-scroll" id="promotionsSection">
+        <h2
+            style="text-align:center; color:var(--primary-blue); font-size:22px; font-weight:700; margin-bottom:20px; text-transform:uppercase;">
+            Promotions</h2>
+        <div class="promo-grid">
+            <div class="promo-card">
+                <div class="img-placeholder" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6b6b 100%);">
+                    <span class="placeholder-icon"><i class="fas fa-percentage"></i></span>
+                    <span class="placeholder-label">Promo Banner 1 (300×160)</span>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="img-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                    <span class="placeholder-icon"><i class="fas fa-tags"></i></span>
+                    <span class="placeholder-label">Promo Banner 2 (300×160)</span>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="img-placeholder" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                    <span class="placeholder-icon"><i class="fas fa-bolt"></i></span>
+                    <span class="placeholder-label">Promo Banner 3 (300×160)</span>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="img-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                    <span class="placeholder-icon"><i class="fas fa-star"></i></span>
+                    <span class="placeholder-label">Promo Banner 4 (300×160)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TOP SELLING SECTION ========== -->
+    <section class="container animate-on-scroll" id="topSellingSection">
+        <div class="section-header">
+            <h2><i class="fas fa-fire" style="margin-right:10px;color:var(--accent-yellow)"></i> Top Selling</h2>
+            <a href="#" class="view-all-btn">View All <i class="fas fa-arrow-right"
+                    style="margin-left:4px;font-size:10px"></i></a>
+        </div>
+        <div class="section-tabs">
+            <span class="section-tab active" data-tab="mobile">Mobile & Accessories</span>
+            <span class="section-tab" data-tab="watches">Smart Watches</span>
+            <span class="section-tab" data-tab="jbl">JBL Audio Systems</span>
+            <span class="section-tab" data-tab="modena">MODENA</span>
+            <span class="section-tab" data-tab="appliances">Home Appliances</span>
+            <span class="section-tab" data-tab="karcher">Karcher Products</span>
+            <span class="section-tab" data-tab="voucher">Gift Voucher</span>
+        </div>
+        <div class="products-section">
+            <div class="products-grid" id="topSellingGrid">
+                <!-- Product 1 -->
+                <div class="product-card" id="topProduct1">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <img src="images/phone_product.png" alt="Samsung Galaxy A07">
+                    </div>
+                    <div class="product-price">LKR 37,999</div>
+                    <div class="product-name">Samsung Galaxy A07 4+64GB BLACK Smart Mobile Phone</div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" id="topProduct2">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="placeholder-label">Phone Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 50,799</div>
+                    <div class="product-name">Samsung Galaxy A07 6+128GB BLACK Smart Mobile Phone</div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" id="topProduct3">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="placeholder-label">Phone Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 37,559</div>
+                    <div class="product-name">Samsung Galaxy F07 4+64GB - GREEN</div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" id="topProduct4">
+                    <div class="product-badge discount">5.8%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="placeholder-label">Phone Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 81,299</div>
+                    <div class="product-price-old">LKR 86,322</div>
+                    <div class="product-name">Samsung Galaxy A17 5G 8+128GB BLACK Mobile Phone</div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" id="topProduct5">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="placeholder-label">Phone Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 26,999</div>
+                    <div class="product-name">Samsung Galaxy A06 4+64GB Smart Phone</div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" id="topProduct6">
+                    <div class="product-badge discount">10%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="placeholder-label">Phone Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 45,999</div>
+                    <div class="product-price-old">LKR 51,110</div>
+                    <div class="product-name">Nokia G42 5G 6+128GB Smart Phone</div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" id="topProduct7">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="placeholder-label">Phone Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 129,999</div>
+                    <div class="product-name">iPhone 15 128GB Smart Phone</div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" id="topProduct8">
+                    <div class="product-badge discount">15%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-headphones"></i></span>
+                            <span class="placeholder-label">Audio Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 12,499</div>
+                    <div class="product-price-old">LKR 14,700</div>
+                    <div class="product-name">JBL Tune 520BT Wireless On-Ear Headphones</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SAMSUNG STORE SECTION ========== -->
+    <section class="container animate-on-scroll" id="samsungStoreSection">
+        <div class="brand-store">
+            <div class="brand-header">
+                <h2><i class="fas fa-store" style="margin-right:10px"></i> Samsung Store</h2>
+                <div class="brand-tabs">
+                    <span class="brand-tab active">Phones & Accessories</span>
+                    <span class="brand-tab">Televisions</span>
+                    <span class="brand-tab">Refrigerators</span>
+                    <span class="brand-tab">Tabs</span>
+                </div>
+            </div>
+            <div class="brand-products">
+                <div class="products-grid" id="samsungGrid">
+                    <!-- Samsung Product 1 -->
+                    <div class="product-card" id="samsungProduct1">
+                        <div class="product-image">
+                            <img src="images/phone_product.png" alt="Samsung Galaxy A07">
+                        </div>
+                        <div class="product-price">LKR 37,999</div>
+                        <div class="product-name">Samsung Galaxy A07 4+64GB BLACK Smart Mobile Phone</div>
+                    </div>
+                    <!-- Samsung Product 2 -->
+                    <div class="product-card" id="samsungProduct2">
+                        <div class="product-image">
+                            <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                                <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                                <span class="placeholder-label">Phone Image</span>
+                            </div>
+                        </div>
+                        <div class="product-price">LKR 50,799</div>
+                        <div class="product-name">Samsung Galaxy A07 6+128GB BLACK Smart Mobile Phone</div>
+                    </div>
+                    <!-- Samsung Product 3 -->
+                    <div class="product-card" id="samsungProduct3">
+                        <div class="product-badge discount">5.8%</div>
+                        <div class="product-image">
+                            <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                                <span class="placeholder-icon"><i class="fas fa-mobile-alt"></i></span>
+                                <span class="placeholder-label">Phone Image</span>
+                            </div>
+                        </div>
+                        <div class="product-price">LKR 81,299</div>
+                        <div class="product-price-old">LKR 86,322</div>
+                        <div class="product-name">Samsung Galaxy A17 5G 8+128GB BLACK Mobile Phone</div>
+                    </div>
+                    <!-- Samsung Product 4 -->
+                    <div class="product-card" id="samsungProduct4">
+                        <div class="product-badge discount">10%</div>
+                        <div class="product-image">
+                            <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                                <span class="placeholder-icon"><i class="fas fa-tv"></i></span>
+                                <span class="placeholder-label">TV Image</span>
+                            </div>
+                        </div>
+                        <div class="product-price">LKR 53,999</div>
+                        <div class="product-price-old">LKR 59,999</div>
+                        <div class="product-name">Samsung 32 Inch HD LED TV</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TV & AUDIO SECTION ========== -->
+    <section class="container animate-on-scroll" id="tvAudioSection">
+        <div class="section-header">
+            <h2><i class="fas fa-tv" style="margin-right:10px;color:var(--accent-yellow)"></i> Televisions & Audio</h2>
+            <a href="#" class="view-all-btn">View All <i class="fas fa-arrow-right"
+                    style="margin-left:4px;font-size:10px"></i></a>
+        </div>
+        <div class="category-pills">
+            <span class="category-pill active">All</span>
+            <span class="category-pill">HD LED/Smart LED</span>
+            <span class="category-pill">FHD Smart LED</span>
+            <span class="category-pill">4K UHD Smart LED</span>
+        </div>
+        <div class="products-section">
+            <div class="products-grid" id="tvGrid">
+                <div class="product-card" id="tvProduct1">
+                    <div class="product-badge discount">10%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-tv"></i></span>
+                            <span class="placeholder-label">TV Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 53,999</div>
+                    <div class="product-price-old">LKR 59,999</div>
+                    <div class="product-name">Samsung 32 Inch HD LED TV</div>
+                </div>
+                <div class="product-card" id="tvProduct2">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-tv"></i></span>
+                            <span class="placeholder-label">TV Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 89,999</div>
+                    <div class="product-name">Nikai 43 Inch FHD Smart LED TV</div>
+                </div>
+                <div class="product-card" id="tvProduct3">
+                    <div class="product-badge discount">15%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-tv"></i></span>
+                            <span class="placeholder-label">TV Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 149,999</div>
+                    <div class="product-price-old">LKR 176,470</div>
+                    <div class="product-name">Samsung 50 Inch 4K UHD Smart LED TV</div>
+                </div>
+                <div class="product-card" id="tvProduct4">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-tv"></i></span>
+                            <span class="placeholder-label">TV Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 239,999</div>
+                    <div class="product-name">Panasonic 55 Inch 4K UHD Smart LED TV</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROMOTIONAL BANNERS ========== -->
+    <div class="container promo-banner-section animate-on-scroll" id="promoBannerSection1">
+        <div class="promo-banner">
+            <div class="img-placeholder" style="background: linear-gradient(135deg, #2E3192 0%, #1BCEDF 100%);">
+                <span class="placeholder-icon" style="font-size:50px;"><i class="fas fa-bullhorn"></i></span>
+                <span class="placeholder-label">Full Width Promotional Banner (1320×200)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ELECTRONIC STORE SECTION ========== -->
+    <section class="container animate-on-scroll" id="electronicStoreSection">
+        <div class="section-header">
+            <h2><i class="fas fa-bolt" style="margin-right:10px;color:var(--accent-yellow)"></i> Electronic Store</h2>
+            <a href="#" class="view-all-btn">View All <i class="fas fa-arrow-right"
+                    style="margin-left:4px;font-size:10px"></i></a>
+        </div>
+        <div class="section-tabs">
+            <span class="section-tab active">Phones</span>
+            <span class="section-tab">Home Appliances</span>
+            <span class="section-tab">Anker</span>
+            <span class="section-tab">Kitchen Appliances</span>
+            <span class="section-tab">Budry Scales</span>
+        </div>
+        <div class="products-section">
+            <div class="products-grid" id="electronicGrid">
+                <div class="product-card" id="elecProduct1">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-charging-station"></i></span>
+                            <span class="placeholder-label">Power Bank Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 8,290</div>
+                    <div class="product-name">Anker A1383 20000mAh Power Bank Black</div>
+                </div>
+                <div class="product-card" id="elecProduct2">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-usb"></i></span>
+                            <span class="placeholder-label">Cable Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 1,550</div>
+                    <div class="product-name">Anker 310 USB-C to USB-C Data Cable 0.9m White</div>
+                </div>
+                <div class="product-card" id="elecProduct3">
+                    <div class="product-badge discount">13.6%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-blender"></i></span>
+                            <span class="placeholder-label">Blender Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 18,999</div>
+                    <div class="product-price-old">LKR 21,990</div>
+                    <div class="product-name">Panasonic Blender With Two Jars</div>
+                </div>
+                <div class="product-card" id="elecProduct4">
+                    <div class="product-badge discount">8%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-utensils"></i></span>
+                            <span class="placeholder-label">Rice Cooker Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 9,199</div>
+                    <div class="product-price-old">LKR 9,999</div>
+                    <div class="product-name">Nikai 2.2L Rice Cooker</div>
+                </div>
+                <div class="product-card" id="elecProduct5">
+                    <div class="product-badge discount">15%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-blender"></i></span>
+                            <span class="placeholder-label">Mixer Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 16,999</div>
+                    <div class="product-price-old">LKR 19,999</div>
+                    <div class="product-name">Maxmo Mixer Grinder 1000W</div>
+                </div>
+                <div class="product-card" id="elecProduct6">
+                    <div class="product-badge discount">7.7%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-blender"></i></span>
+                            <span class="placeholder-label">Mixer Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 11,999</div>
+                    <div class="product-price-old">LKR 12,999</div>
+                    <div class="product-name">Maxmo Mixer Grinder 600W</div>
+                </div>
+                <div class="product-card" id="elecProduct7">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-weight"></i></span>
+                            <span class="placeholder-label">Scale Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 4,299</div>
+                    <div class="product-name">Budry – 5kg Kitchen Scale</div>
+                </div>
+                <div class="product-card" id="elecProduct8">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-suitcase"></i></span>
+                            <span class="placeholder-label">Scale Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 3,499</div>
+                    <div class="product-name">Budry - 50kg Luggage Scale with strap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DOUBLE PROMOTIONAL BANNERS ========== -->
+    <div class="container promo-double animate-on-scroll" id="promoDoubleSection">
+        <div class="promo-item">
+            <div class="img-placeholder" style="background: linear-gradient(135deg, #E31E24 0%, #ff6b6b 100%);">
+                <span class="placeholder-icon" style="font-size:40px;"><i class="fas fa-percent"></i></span>
+                <span class="placeholder-label">Promo Banner Left (640×180)</span>
+            </div>
+        </div>
+        <div class="promo-item">
+            <div class="img-placeholder" style="background: linear-gradient(135deg, #7B3F97 0%, #a855f7 100%);">
+                <span class="placeholder-icon" style="font-size:40px;"><i class="fas fa-gift"></i></span>
+                <span class="placeholder-label">Promo Banner Right (640×180)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FURNITURE SECTION ========== -->
+    <section class="container animate-on-scroll" id="furnitureSection">
+        <div class="section-header">
+            <h2><i class="fas fa-couch" style="margin-right:10px;color:var(--accent-yellow)"></i> Furniture</h2>
+            <a href="#" class="view-all-btn">View All <i class="fas fa-arrow-right"
+                    style="margin-left:4px;font-size:10px"></i></a>
+        </div>
+        <div class="category-pills">
+            <span class="category-pill active">Sofas</span>
+            <span class="category-pill">Coffee Tables</span>
+            <span class="category-pill">Beds & Wardrobes</span>
+            <span class="category-pill">Dining Tables</span>
+            <span class="category-pill">Office Furniture</span>
+            <span class="category-pill">Mattresses</span>
+        </div>
+        <div class="products-section">
+            <div class="products-grid" id="furnitureGrid">
+                <!-- Furniture Product 1 - Uses generated image -->
+                <div class="product-card" id="furnitureProduct1">
+                    <div class="ar-badge">
+                        <span>VIEW IN AR</span>
+                        <span>3D</span>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/sofa_product.png" alt="Nicole 2+2 L Shape Sofa">
+                    </div>
+                    <div class="product-price">LKR 125,999</div>
+                    <div class="product-name">Nicole 2+2 L Shape Sofa</div>
+                </div>
+                <!-- Furniture Product 2 -->
+                <div class="product-card" id="furnitureProduct2">
+                    <div class="ar-badge">
+                        <span>VIEW IN AR</span>
+                        <span>3D</span>
+                    </div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-couch"></i></span>
+                            <span class="placeholder-label">Sofa Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 78,699</div>
+                    <div class="product-name">Marina 2+1+1 Sofa</div>
+                </div>
+                <!-- Furniture Product 3 -->
+                <div class="product-card" id="furnitureProduct3">
+                    <div class="product-badge discount">19%</div>
+                    <div class="ar-badge">
+                        <span>VIEW IN AR</span>
+                        <span>3D</span>
+                    </div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-couch"></i></span>
+                            <span class="placeholder-label">Sofa Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 119,299</div>
+                    <div class="product-price-old">LKR 147,299</div>
+                    <div class="product-name">Milan 3+1+1 Sofa</div>
+                </div>
+                <!-- Furniture Product 4 -->
+                <div class="product-card" id="furnitureProduct4">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-couch"></i></span>
+                            <span class="placeholder-label">Sofa Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 157,999</div>
+                    <div class="product-name">NOVA SOFA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REFRIGERATORS & APPLIANCES ========== -->
+    <section class="container animate-on-scroll" id="refrigeratorSection">
+        <div class="section-header">
+            <h2><i class="fas fa-snowflake" style="margin-right:10px;color:var(--accent-yellow)"></i> Refrigerators &
+                Home Appliances</h2>
+            <a href="#" class="view-all-btn">View All <i class="fas fa-arrow-right"
+                    style="margin-left:4px;font-size:10px"></i></a>
+        </div>
+        <div class="category-pills">
+            <span class="category-pill active">All</span>
+            <span class="category-pill">Single Door</span>
+            <span class="category-pill">Double Door</span>
+            <span class="category-pill">Side by Side</span>
+            <span class="category-pill">Washing Machines</span>
+            <span class="category-pill">Air Conditioners</span>
+        </div>
+        <div class="products-section">
+            <div class="products-grid" id="refrigeratorGrid">
+                <div class="product-card" id="fridgeProduct1">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-snowflake"></i></span>
+                            <span class="placeholder-label">Refrigerator Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 239,999</div>
+                    <div class="product-name">Samsung Twin Cooling Plus™ Double Door Refrigerator – 324L</div>
+                </div>
+                <div class="product-card" id="fridgeProduct2">
+                    <div class="product-badge discount">5%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-snowflake"></i></span>
+                            <span class="placeholder-label">Refrigerator Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 189,999</div>
+                    <div class="product-price-old">LKR 199,999</div>
+                    <div class="product-name">Panasonic 296L Double Door Inverter Refrigerator</div>
+                </div>
+                <div class="product-card" id="fridgeProduct3">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-tshirt"></i></span>
+                            <span class="placeholder-label">Washing Machine Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 142,999</div>
+                    <div class="product-name">Samsung 8kg Front Loading Washing Machine</div>
+                </div>
+                <div class="product-card" id="fridgeProduct4">
+                    <div class="product-badge discount">12%</div>
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-wind"></i></span>
+                            <span class="placeholder-label">AC Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 179,999</div>
+                    <div class="product-price-old">LKR 204,545</div>
+                    <div class="product-name">Samsung 12000 BTU Inverter Air Conditioner</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LIGHTING & POWER SECTION ========== -->
+    <section class="container animate-on-scroll" id="lightingSection">
+        <div class="section-header">
+            <h2><i class="fas fa-lightbulb" style="margin-right:10px;color:var(--accent-yellow)"></i> Lighting & Power
+            </h2>
+            <a href="#" class="view-all-btn">View All <i class="fas fa-arrow-right"
+                    style="margin-left:4px;font-size:10px"></i></a>
+        </div>
+        <div class="category-pills">
+            <span class="category-pill active">All</span>
+            <span class="category-pill">Batteries & Chargers</span>
+            <span class="category-pill">CFL / LED Bulbs</span>
+            <span class="category-pill">Generators</span>
+            <span class="category-pill">Power Tools</span>
+        </div>
+        <div class="products-section">
+            <div class="products-grid" id="lightingGrid">
+                <div class="product-card" id="lightProduct1">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-lightbulb"></i></span>
+                            <span class="placeholder-label">LED Bulb Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 599</div>
+                    <div class="product-name">9W LED Bulb - Daylight</div>
+                </div>
+                <div class="product-card" id="lightProduct2">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-car-battery"></i></span>
+                            <span class="placeholder-label">UPS Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 24,900</div>
+                    <div class="product-name">Budry 1200VA Uninterrupted Power Supply</div>
+                </div>
+                <div class="product-card" id="lightProduct3">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-car-battery"></i></span>
+                            <span class="placeholder-label">UPS Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 12,900</div>
+                    <div class="product-name">Budry 650VA Uninterrupted Power Supply</div>
+                </div>
+                <div class="product-card" id="lightProduct4">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #e8ecf3, #d5dce8);">
+                            <span class="placeholder-icon"><i class="fas fa-tools"></i></span>
+                            <span class="placeholder-label">Power Tool Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price">LKR 59,799</div>
+                    <div class="product-name">Karcher Wet & Dry Vacuum – WD3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GIFT VOUCHERS SECTION ========== -->
+    <section class="container animate-on-scroll" id="giftVoucherSection">
+        <div class="section-header" style="background: linear-gradient(135deg, var(--accent-purple), #9b59b6);">
+            <h2><i class="fas fa-gift" style="margin-right:10px;color:var(--accent-yellow)"></i> Gift Vouchers</h2>
+            <a href="#" class="view-all-btn">View All <i class="fas fa-arrow-right"
+                    style="margin-left:4px;font-size:10px"></i></a>
+        </div>
+        <div class="products-section">
+            <div class="products-grid" id="voucherGrid">
+                <div class="product-card" id="voucher1">
+                    <div class="product-image">
+                        <div class="img-placeholder"
+                            style="background: linear-gradient(135deg, #a855f7, #7c3aed); border-radius: 8px;">
+                            <span class="placeholder-icon" style="color: white;"><i class="fas fa-gift"></i></span>
+                            <span class="placeholder-label" style="background: rgba(255,255,255,0.9);">Voucher
+                                Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price" style="color: var(--accent-purple);">LKR 500</div>
+                    <div class="product-name">Rs.500 Corporate All-Store Gift Voucher</div>
+                </div>
+                <div class="product-card" id="voucher2">
+                    <div class="product-image">
+                        <div class="img-placeholder"
+                            style="background: linear-gradient(135deg, #a855f7, #7c3aed); border-radius: 8px;">
+                            <span class="placeholder-icon" style="color: white;"><i class="fas fa-gift"></i></span>
+                            <span class="placeholder-label" style="background: rgba(255,255,255,0.9);">Voucher
+                                Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price" style="color: var(--accent-purple);">LKR 1,000</div>
+                    <div class="product-name">Rs.1,000 Softlogic Corporate All-Store Gift Voucher</div>
+                </div>
+                <div class="product-card" id="voucher3">
+                    <div class="product-image">
+                        <div class="img-placeholder"
+                            style="background: linear-gradient(135deg, #a855f7, #7c3aed); border-radius: 8px;">
+                            <span class="placeholder-icon" style="color: white;"><i class="fas fa-gift"></i></span>
+                            <span class="placeholder-label" style="background: rgba(255,255,255,0.9);">Voucher
+                                Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price" style="color: var(--accent-purple);">LKR 5,000</div>
+                    <div class="product-name">Rs.5,000 Softlogic Corporate All-Store Gift Voucher</div>
+                </div>
+                <div class="product-card" id="voucher4">
+                    <div class="product-image">
+                        <div class="img-placeholder"
+                            style="background: linear-gradient(135deg, #a855f7, #7c3aed); border-radius: 8px;">
+                            <span class="placeholder-icon" style="color: white;"><i class="fas fa-gift"></i></span>
+                            <span class="placeholder-label" style="background: rgba(255,255,255,0.9);">Voucher
+                                Image</span>
+                        </div>
+                    </div>
+                    <div class="product-price" style="color: var(--accent-purple);">LKR 10,000</div>
+                    <div class="product-name">Rs.10,000 Softlogic Corporate All-Store Gift Voucher</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Contact -->
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <div class="phone-number">+94 11 512 8128</div>
+                    <p>Softlogic Holdings PLC, 4th Floor,</p>
+                    <p>No. 14, De Fonseka Place,</p>
+                    <p>Colombo 05, Sri Lanka.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" id="facebookLink"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" id="twitterLink"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" id="instagramLink"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" id="youtubeLink"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Useful Links -->
+                <div class="footer-col">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#" id="aboutUsLink">About Us</a></li>
+                        <li><a href="#" id="servicesLink">Services</a></li>
+                        <li><a href="#" id="careersLink">Careers</a></li>
+                        <li><a href="#" id="servicePaymentLink">Service Payment</a></li>
+                        <li><a href="#" id="crmLink">CRM</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer Care -->
+                <div class="footer-col">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="#" id="deliveryLink">Delivery Information</a></li>
+                        <li><a href="#" id="returnsLink">Returns & Exchanges</a></li>
+                        <li><a href="#" id="warrantyLink">Warranty Information</a></li>
+                        <li><a href="#" id="termsLink">Terms Of Use</a></li>
+                        <li><a href="#" id="privacyLink">Privacy Policy</a></li>
+                        <li><a href="#" id="faqsLink">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: App Downloads -->
+                <div class="footer-col">
+                    <h3>Download Our App</h3>
+                    <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+                        <div class="img-placeholder"
+                            style="height:45px;width:150px;border-radius:6px;background:linear-gradient(135deg,#333,#555);">
+                            <span style="color:white;font-size:12px;font-weight:600;z-index:1;"><i
+                                    class="fab fa-google-play" style="margin-right:5px"></i> Google Play</span>
+                        </div>
+                        <div class="img-placeholder"
+                            style="height:45px;width:150px;border-radius:6px;background:linear-gradient(135deg,#333,#555);">
+                            <span style="color:white;font-size:12px;font-weight:600;z-index:1;"><i class="fab fa-apple"
+                                    style="margin-right:5px"></i> App Store</span>
+                        </div>
+                        <div class="img-placeholder"
+                            style="height:45px;width:150px;border-radius:6px;background:linear-gradient(135deg,#333,#555);">
+                            <span style="color:white;font-size:12px;font-weight:600;z-index:1;"><i
+                                    class="fas fa-mobile-alt" style="margin-right:5px"></i> AppGallery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Companies -->
+            <div class="group-companies">
+                <h3>Shop At Our Group Companies</h3>
+                <div class="group-logos">
+                    <a href="#" class="group-logo-item" id="glomarkLink">
+                        <span class="sub-brand">softlogic</span>
+                        GLOMARK
+                    </a>
+                    <a href="#" class="group-logo-item" id="odelLink">
+                        ODEL
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright-bar">
+            <div class="container">
+                <p>Copyright &copy;2026 All rights reserved</p>
+                <div class="payment-methods">
+                    <span class="payment-method mastercard">Mastercard</span>
+                    <span class="payment-method visa">VISA</span>
+                    <span class="payment-method amex">AMEX</span>
+                    <span class="payment-method" style="color:#ff6b6b;">frimi</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING BUTTONS ========== -->
+    <button class="whatsapp-btn" id="whatsappBtn" title="Chat with us">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
